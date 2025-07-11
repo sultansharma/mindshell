@@ -90,5 +90,9 @@
   "rm -rf null",
   "echo '.mindshell' >> .gitignore",
   "git status",
+  "git add .",
+  "git commit -m \"ignore mindshell\"",
+  "git push",
+  "git status",
   "git add ."
 ]
