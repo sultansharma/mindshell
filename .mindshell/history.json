@@ -1,50 +1,5 @@
 [
   {
-    "prompt": "cat index2.html",
-    "command": "cat index2.html",
-    "output": "",
-    "type": "error",
-    "error": "ENOENT: no such file or directory, open 'index2.html'",
-    "timestamp": "2025-07-11T05:49:43.724Z"
-  },
-  {
-    "prompt": "",
-    "command": "cat index2.html",
-    "output": "",
-    "error": "ENOENT: no such file or directory, open 'index2.html'",
-    "timestamp": "2025-07-11T05:49:43.809Z",
-    "type": "command"
-  },
-  {
-    "prompt": "cat index2.html",
-    "output": "The original command was cat index2.html, attempting to display the contents of a file named index2.html. Diagnostic steps were taken: listing all files in the directory and searching for files with similar names. These steps confirmed that index2.html does not exist in the current directory—only index.html is present. That's why the command failed. Recommendation: use cat index.html if that's the intended file, or verify the correct filename.",
-    "type": "explanation",
-    "error": "",
-    "timestamp": "2025-07-11T05:49:57.665Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init mindshell && cd mindshell && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-repo-URL> && git push -u origin main",
-    "output": "git init mindshell && cd mindshell && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-repo-URL> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T05:51:12.546Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init mindshell && cd mindshell && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-repo-URL> && git push -u origin main",
-    "output": "",
-    "error": "/bin/sh: -c: line 0: syntax error near unexpected token `&&'\n/bin/sh: -c: line 0: `git init mindshell && cd mindshell && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-repo-URL> && git push -u origin main'",
-    "timestamp": "2025-07-11T05:51:21.626Z",
-    "type": "command"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin git@github.com:<your-username>/mindshell.git && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin git@github.com:<your-username>/mindshell.git && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T05:54:23.487Z"
-  },
-  {
     "prompt": "suggest me a command to create a git repo and push with name mindshell",
     "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin git@github.com:<your-username>/mindshell.git && git push -u origin main",
     "output": "Initialized empty Git repository in /Users/deep/Downloads/project 5/.git/\n[master (root-commit) 68fc8c9] Initial commit\n 66 files changed, 10894 insertions(+)\n create mode 100644 .bolt/config.json\n create mode 100644 .bolt/prompt\n create mode 100644 .gitignore\n create mode 100644 .mindshell/ask-history.json\n create mode 100644 .mindshell/commandhistory.json\n create mode 100644 .mindshell/config.json\n create mode 100644 .mindshell/context-project 5-58537813.json\n create mode 100644 .mindshell/history.json\n create mode 100644 eslint.config.js\n create mode 100644 index.html\n create mode 100644 nul\n create mode 100644 package-lock.json\n create mode 100644 package.json\n create mode 100644 postcss.config.js\n create mode 100644 src/App.tsx\n create mode 100644 src/cli.tsx\n create mode 100644 src/cliShell.tsx\n create mode 100644 src/components/AskKey.tsx\n create mode 100644 src/components/CliReady.tsx\n create mode 100644 src/components/DownloadProgress.tsx\n create mode 100644 src/components/Header.tsx\n create mode 100644 src/components/InputPrompt.tsx\n create mode 100644 src/components/Loading.tsx\n create mode 100644 src/components/OutputDisplay.tsx\n create mode 100644 src/components/ProgressBar.tsx\n create mode 100644 src/components/ProjectDirctory.tsx\n create mode 100644 src/components/SelectMode.tsx\n create mode 100644 src/components/SetProjectDirManual.tsx\n create mode 100644 src/components/welcome.tsx\n create mode 100644 src/index.css\n create mode 100644 src/index.ts\n create mode 100644 src/internal/ai/contextAdapter.tsx\n create mode 100644 src/internal/ai/getAiResponse.tsx\n create mode 100644 src/internal/ai/parser.ts\n create mode 100644 src/internal/ai/providers/gemini.ts\n create mode 100644 src/internal/ai/providers/ollma.ts\n create mode 100644 src/internal/ai/providers/openai.ts\n create mode 100644 src/internal/ai/responses/aiResponse.tsx\n create mode 100644 src/internal/ai/responses/components/commandResponse.tsx\n create mode 100644 src/internal/ai/responses/components/diagnosticResponse.tsx\n create mode 100644 src/internal/ai/responses/components/explainResponse.tsx\n create mode 100644 src/internal/ai/system/contextDetector.ts\n create mode 100644 src/internal/ai/system/systemPrompt.ts\n create mode 100644 src/internal/commands/builtins.ts\n create mode 100644 src/internal/commands/commandHandler.ts\n create mode 100644 src/internal/commands/executor.ts\n create mode 100644 src/internal/commands/new.ts\n create mode 100644 src/main.tsx\n create mode 100644 src/types/ai.ts\n create mode 100644 src/types/cli.ts\n create mode 100644 src/types/config.ts\n create mode 100644 src/types/context.ts\n create mode 100644 src/utils/changeModel.tsx\n create mode 100644 src/utils/config.tsx\n create mode 100644 src/utils/constant.tsx\n create mode 100644 src/utils/downloadProgress.ts\n create mode 100644 src/utils/history.tsx\n create mode 100644 src/vite-env.d.ts\n create mode 100644 tailwind.config.js\n create mode 100644 test-download-progress.js\n create mode 100644 testfile.zip\n create mode 100644 tsconfig.app.json\n create mode 100644 tsconfig.cli.json\n create mode 100644 tsconfig.json\n create mode 100644 tsconfig.node.json\n create mode 100644 vite.config.ts",
@@ -220,6 +175,49 @@
     "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main bf8f016] Initial commit\n 1 file changed, 8 insertions(+), 8 deletions(-)",
     "error": "error: remote origin already exists.",
     "timestamp": "2025-07-11T06:29:41.033Z",
+    "type": "command"
+  },
+  {
+    "prompt": "suggest me a command to create a git repo and push with name mindshell",
+    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin https://github.com/sultansharma/mindshell.git && git push -u origin main",
+    "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main f0c0e5c] Initial commit\n 1 file changed, 8 insertions(+), 7 deletions(-)",
+    "error": "error: remote origin already exists.",
+    "timestamp": "2025-07-11T06:29:43.783Z",
+    "type": "command"
+  },
+  {
+    "prompt": "suggest me a command to create a git repo and push with name mindshell",
+    "command": "git remote set-url origin https://github.com/sultansharma/mindshell.git",
+    "output": "",
+    "timestamp": "2025-07-11T06:30:03.601Z",
+    "type": "command"
+  },
+  {
+    "prompt": "suggest me a command to create a git repo and push with name mindshell",
+    "command": "git remote set-url origin https://github.com/sultansharma/mindshell.git",
+    "output": "",
+    "timestamp": "2025-07-11T06:30:03.634Z",
+    "type": "command"
+  },
+  {
+    "prompt": "git status",
+    "command": "git status",
+    "output": "On branch main\nYour branch is ahead of 'origin/main' by 9 commits.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   .mindshell/commandhistory.json\n\tmodified:   .mindshell/history.json\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")",
+    "type": "command",
+    "timestamp": "2025-07-11T06:30:16.919Z"
+  },
+  {
+    "prompt": "git add .",
+    "command": "git add .",
+    "output": "git add .",
+    "type": "command",
+    "timestamp": "2025-07-11T06:30:28.189Z"
+  },
+  {
+    "prompt": "git add .",
+    "command": "git add .",
+    "output": "",
+    "timestamp": "2025-07-11T06:30:32.243Z",
     "type": "command"
   }
 ]
