@@ -1,52 +1,6 @@
 [
   {
     "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git branch -M main && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git branch -M main && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:22:27.619Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin https://github.com/sultansharma/mindshell.git && git branch -M main && git push -u origin main",
-    "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main 21079cd] Initial commit\n 5 files changed, 248 insertions(+), 135 deletions(-)\nbranch 'main' set up to track 'origin/main'.",
-    "error": "To https://github.com/sultansharma/mindshell.git\n * [new branch]      main -> main",
-    "timestamp": "2025-07-11T06:22:48.915Z",
-    "type": "command"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin https://github.com/sultansharma/mindshell.git && git branch -M main && git push -u origin main",
-    "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main 936fb08] Initial commit\n 1 file changed, 8 insertions(+), 7 deletions(-)",
-    "error": "error: remote origin already exists.",
-    "timestamp": "2025-07-11T06:22:52.971Z",
-    "type": "command"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <remote-url-for-mindshell> && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <remote-url-for-mindshell> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:26:02.029Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin https://github.com/sultansharma/mindshell.git && git push -u origin main",
-    "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main 89cec91] Initial commit\n 3 files changed, 20 insertions(+), 19 deletions(-)",
-    "error": "error: remote origin already exists.",
-    "timestamp": "2025-07-11T06:26:13.201Z",
-    "type": "command"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin https://github.com/sultansharma/mindshell.git && git push -u origin main",
-    "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main 60a49ca] Initial commit\n 1 file changed, 8 insertions(+), 7 deletions(-)",
-    "error": "error: remote origin already exists.",
-    "timestamp": "2025-07-11T06:26:18.278Z",
-    "type": "command"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
     "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin https://github.com/sultansharma/mindshell.git && git push -u origin main",
     "output": "Reinitialized existing Git repository in /Users/deep/Downloads/project 5/.git/\n[main 01ea336] Initial commit\n 1 file changed, 8 insertions(+), 8 deletions(-)",
     "error": "error: remote origin already exists.",
@@ -223,5 +177,48 @@
     "error": "To https://github.com/sultansharma/mindshell.git\n   765e227..8f184a2  main -> main",
     "timestamp": "2025-07-11T06:32:57.449Z",
     "type": "command"
+  },
+  {
+    "prompt": "add files and push",
+    "command": "git add . && git commit -m \"Add files\" && git push",
+    "output": "[main ecbcf9e] Add files\n 1 file changed, 8 insertions(+), 7 deletions(-)",
+    "error": "To https://github.com/sultansharma/mindshell.git\n   8f184a2..ecbcf9e  main -> main",
+    "timestamp": "2025-07-11T06:33:03.067Z",
+    "type": "command"
+  },
+  {
+    "prompt": "add .mindshell into git ifgnore",
+    "command": "echo '.mindshell' >> .gitignore && git add .gitignore && git commit -m 'Add .mindshell to .gitignore'",
+    "output": "echo '.mindshell' >> .gitignore && git add .gitignore && git commit -m 'Add .mindshell to .gitignore'",
+    "type": "command",
+    "timestamp": "2025-07-11T06:34:12.670Z"
+  },
+  {
+    "prompt": "add .mindshell into git ifgnore",
+    "command": "echo '.mindshell' >> .gitignore && git add .gitignore && git commit -m 'Add .mindshell to .gitignore'",
+    "output": "'.mindshell' >> .gitignore && git add .gitignore && git commit -m 'Add .mindshell to .gitignore'",
+    "timestamp": "2025-07-11T06:34:14.450Z",
+    "type": "command"
+  },
+  {
+    "prompt": "add .mindshell into git ifgnore",
+    "command": "echo '.mindshell' >> .gitignore && git add .gitignore && git commit -m 'Add .mindshell to .gitignore'",
+    "output": "'.mindshell' >> .gitignore && git add .gitignore && git commit -m 'Add .mindshell to .gitignore'",
+    "timestamp": "2025-07-11T06:34:14.466Z",
+    "type": "command"
+  },
+  {
+    "prompt": "echo '.mindshell' >> .gitignore",
+    "command": "echo '.mindshell' >> .gitignore",
+    "output": "'.mindshell' >> .gitignore",
+    "type": "command",
+    "timestamp": "2025-07-11T06:35:31.089Z"
+  },
+  {
+    "prompt": "git status",
+    "command": "git status",
+    "output": "On branch main\nYour branch is up to date with 'origin/main'.\n\nChanges not staged for commit:\n  (use \"git add/rm <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   .gitignore\n\tmodified:   .mindshell/ask-history.json\n\tmodified:   .mindshell/commandhistory.json\n\tmodified:   .mindshell/history.json\n\tdeleted:    nul\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")",
+    "type": "command",
+    "timestamp": "2025-07-11T06:36:42.860Z"
   }
 ]

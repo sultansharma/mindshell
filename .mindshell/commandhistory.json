@@ -87,5 +87,8 @@
   "pws",
   "pwd",
   "rm -rf index.html",
-  "rm -rf null"
+  "rm -rf null",
+  "echo '.mindshell' >> .gitignore",
+  "git status",
+  "git add ."
 ]
