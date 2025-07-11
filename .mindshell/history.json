@@ -1,13 +1,6 @@
 [
   {
     "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git checkout -b main && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git push -u origin main",
-    "output": "git init && git checkout -b main && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:19:40.517Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
     "command": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git branch -M main && git push -u origin main",
     "output": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git branch -M main && git push -u origin main",
     "type": "command",
@@ -222,5 +215,13 @@
     "output": "Add all changes to git, commit with a message, and push to the remote repository.",
     "type": "command",
     "timestamp": "2025-07-11T06:32:49.814Z"
+  },
+  {
+    "prompt": "add files and push",
+    "command": "git add . && git commit -m \"Add files\" && git push",
+    "output": "[main 8f184a2] Add files\n 5 files changed, 85 insertions(+), 89 deletions(-)\n delete mode 100644 index.html",
+    "error": "To https://github.com/sultansharma/mindshell.git\n   765e227..8f184a2  main -> main",
+    "timestamp": "2025-07-11T06:32:57.449Z",
+    "type": "command"
   }
 ]
