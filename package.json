@@ -1,5 +1,5 @@
 {
-  "name": "beautiful-cli-app",
+  "name": "mindshell",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -7,14 +7,14 @@
     "cli": "./dist/index.js"
   },
   "scripts": {
-    "build-cli": "tsc --project tsconfig.cli.json",
+    "build-mindshel": "tsc --project tsconfig.cli.json",
     "watch-cli": "tsc --project tsconfig.cli.json --watch",
     "serve-dist": "nodemon --watch dist --exec node dist/index.js",
     "dev-cli": "ts-node-dev --respawn --transpile-only dist/index.js",
     "dev": "vite",
     "build": "vite build",
-    "start-cli": "npm run build-cli && node dist/index.js",
-    "serve-cli": "nodemon --watch dist/index.js --exec node dist/index.js",
+    "start-mindshel": "npm run build-mindshel && node dist/index.js",
+    "serve-mindshel": "nodemon --watch dist/index.js --exec node dist/index.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
