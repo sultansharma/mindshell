@@ -1,0 +1,54 @@
+{
+  "version": "1.0.0",
+  "timestamp": 1752212984312,
+  "projectHash": "37651c4a777bd0f17601bede97c32c26",
+  "staticc": {
+    "system": {
+      "os": "darwin",
+      "arch": "arm64",
+      "release": "24.1.0",
+      "shell": "/bin/zsh",
+      "user": "deep",
+      "node": "v18.19.0",
+      "cwd": "/Users/deep/Downloads/project 5"
+    },
+    "tools": {
+      "packageManagers": [
+        "npm",
+        "yarn",
+        "pnpm"
+      ],
+      "languages": [
+        "node",
+        "python",
+        "python3",
+        "go",
+        "java",
+        "php",
+        "ruby"
+      ],
+      "devTools": [
+        "git",
+        "docker"
+      ],
+      "databases": [
+        "mysql"
+      ]
+    },
+    "project": {
+      "type": "web-application",
+      "languages": [
+        "JavaScript",
+        "TypeScript"
+      ],
+      "frameworks": [
+        "React"
+      ],
+      "packageManager": "npm",
+      "buildTool": "Vite",
+      "hasTests": true,
+      "hasDocker": false,
+      "hasCI": false
+    }
+  }
+}
