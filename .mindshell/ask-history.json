@@ -1,7 +1,5 @@
 [
   "suggest me command to get total files in current directory",
-  "change-model",
-  "suggest me command to get total files in current directory",
   "suggest me command to get total files in current directory",
   "suggest me command to get total files in current directory",
   "suggest me command to get total files in current directory",
@@ -98,5 +96,7 @@
   "suggest me a command to create a git repo and push with name mindshell",
   "suggest me a command to create a git repo and push with name mindshell",
   "suggest me a command to create a git repo and push with name mindshell",
+  "suggest me a command to create a git repo and push with name mindshell",
+  "suggest command to run my project ",
   "suggest me a command to create a git repo and push with name mindshell"
 ]

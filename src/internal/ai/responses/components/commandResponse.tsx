@@ -53,7 +53,9 @@ export const CommandResponse: React.FC<{
     const extracted = extractPlaceholders(currentCmd);
     if (extracted.length > 0) {
       setPlaceholders(extracted);
-      setConfirmNeeded(false); // Start filling placeholders immediately
+      setConfirmNeeded(false); // start collecting input
+    } else {
+      setPlaceholdersResolved(true); // ✅ no placeholders, go straight to confirmation
     }
   }, [currentCmd]);
 
@@ -142,7 +144,6 @@ export const CommandResponse: React.FC<{
           <Text color={PrimaryColor} bold>{currentCmd}</Text>
         </Box>
       </Box>
-
       {/* Placeholder prompt */}
       {!confirmNeeded && placeholders.length > 0 && currentPlaceholderIndex < placeholders.length && (
        <>{placeholdersResolved == false &&
