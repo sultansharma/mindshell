@@ -43,7 +43,6 @@ export const CommandResponse: React.FC<{
   const [placeholderValues, setPlaceholderValues] = useState<Record<string, string>>({});
   const [currentPlaceholderIndex, setCurrentPlaceholderIndex] = useState<number>(0);
   const [inputBuffer, setInputBuffer] = useState<string>('');
-
   const [confirmNeeded, setConfirmNeeded] = useState<boolean>(true);
   const [isRunning, setRunning] = useState<boolean>(false);
   const [lastOutput, setLastOutput] = useState<string | null>(null);
@@ -146,6 +145,7 @@ export const CommandResponse: React.FC<{
 
       {/* Placeholder prompt */}
       {!confirmNeeded && placeholders.length > 0 && currentPlaceholderIndex < placeholders.length && (
+       <>{placeholdersResolved == false &&
         <Box marginTop={1} flexDirection="column">
           <Text>
             📝 Please enter value for <Text bold color="cyan">{placeholders[currentPlaceholderIndex]}</Text>:
@@ -184,7 +184,9 @@ export const CommandResponse: React.FC<{
               showCursor
             />
             </Box>
-        </Box>
+        </Box>}
+       </>  
+      
       )}
 
       {/* Confirmation */}
