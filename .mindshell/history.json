@@ -1,77 +1,6 @@
 [
   {
     "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin git@github.com:<your-username>/mindshell.git && git push -u origin main",
-    "output": "Initialized empty Git repository in /Users/deep/Downloads/project 5/.git/\n[master (root-commit) 68fc8c9] Initial commit\n 66 files changed, 10894 insertions(+)\n create mode 100644 .bolt/config.json\n create mode 100644 .bolt/prompt\n create mode 100644 .gitignore\n create mode 100644 .mindshell/ask-history.json\n create mode 100644 .mindshell/commandhistory.json\n create mode 100644 .mindshell/config.json\n create mode 100644 .mindshell/context-project 5-58537813.json\n create mode 100644 .mindshell/history.json\n create mode 100644 eslint.config.js\n create mode 100644 index.html\n create mode 100644 nul\n create mode 100644 package-lock.json\n create mode 100644 package.json\n create mode 100644 postcss.config.js\n create mode 100644 src/App.tsx\n create mode 100644 src/cli.tsx\n create mode 100644 src/cliShell.tsx\n create mode 100644 src/components/AskKey.tsx\n create mode 100644 src/components/CliReady.tsx\n create mode 100644 src/components/DownloadProgress.tsx\n create mode 100644 src/components/Header.tsx\n create mode 100644 src/components/InputPrompt.tsx\n create mode 100644 src/components/Loading.tsx\n create mode 100644 src/components/OutputDisplay.tsx\n create mode 100644 src/components/ProgressBar.tsx\n create mode 100644 src/components/ProjectDirctory.tsx\n create mode 100644 src/components/SelectMode.tsx\n create mode 100644 src/components/SetProjectDirManual.tsx\n create mode 100644 src/components/welcome.tsx\n create mode 100644 src/index.css\n create mode 100644 src/index.ts\n create mode 100644 src/internal/ai/contextAdapter.tsx\n create mode 100644 src/internal/ai/getAiResponse.tsx\n create mode 100644 src/internal/ai/parser.ts\n create mode 100644 src/internal/ai/providers/gemini.ts\n create mode 100644 src/internal/ai/providers/ollma.ts\n create mode 100644 src/internal/ai/providers/openai.ts\n create mode 100644 src/internal/ai/responses/aiResponse.tsx\n create mode 100644 src/internal/ai/responses/components/commandResponse.tsx\n create mode 100644 src/internal/ai/responses/components/diagnosticResponse.tsx\n create mode 100644 src/internal/ai/responses/components/explainResponse.tsx\n create mode 100644 src/internal/ai/system/contextDetector.ts\n create mode 100644 src/internal/ai/system/systemPrompt.ts\n create mode 100644 src/internal/commands/builtins.ts\n create mode 100644 src/internal/commands/commandHandler.ts\n create mode 100644 src/internal/commands/executor.ts\n create mode 100644 src/internal/commands/new.ts\n create mode 100644 src/main.tsx\n create mode 100644 src/types/ai.ts\n create mode 100644 src/types/cli.ts\n create mode 100644 src/types/config.ts\n create mode 100644 src/types/context.ts\n create mode 100644 src/utils/changeModel.tsx\n create mode 100644 src/utils/config.tsx\n create mode 100644 src/utils/constant.tsx\n create mode 100644 src/utils/downloadProgress.ts\n create mode 100644 src/utils/history.tsx\n create mode 100644 src/vite-env.d.ts\n create mode 100644 tailwind.config.js\n create mode 100644 test-download-progress.js\n create mode 100644 testfile.zip\n create mode 100644 tsconfig.app.json\n create mode 100644 tsconfig.cli.json\n create mode 100644 tsconfig.json\n create mode 100644 tsconfig.node.json\n create mode 100644 vite.config.ts",
-    "error": "hint: Using 'master' as the name for the initial branch. This default branch name\nhint: is subject to change. To configure the initial branch name to use in all\nhint: of your new repositories, which will suppress this warning, call:\nhint:\nhint: \tgit config --global init.defaultBranch <name>\nhint:\nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint:\nhint: \tgit branch -m <name>\n/bin/sh: your-username: No such file or directory",
-    "timestamp": "2025-07-11T05:54:34.199Z",
-    "type": "command"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin https://github.com/your-username/mindshell.git && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin https://github.com/your-username/mindshell.git && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T05:55:35.071Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-remote-url> && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-remote-url> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T05:58:40.704Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <https://github.com/<your-username>/mindshell.git> && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <https://github.com/<your-username>/mindshell.git> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:06:51.427Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git remote add origin <git-remote-url> && git add . && git commit -m \"Initial commit\" && git branch -M main && git push -u origin main",
-    "output": "git init && git remote add origin <git-remote-url> && git add . && git commit -m \"Initial commit\" && git branch -M main && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:07:47.501Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <YOUR_GITHUB_REPO_URL> && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <YOUR_GITHUB_REPO_URL> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:09:06.861Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin <remote-repo-URL> && git branch -M main && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git remote add origin <remote-repo-URL> && git branch -M main && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:11:55.127Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git remote add origin <remote-url> && git add . && git commit -m \"Initial commit\" && git branch -M main && git push -u origin main",
-    "output": "git init && git remote add origin <remote-url> && git add . && git commit -m \"Initial commit\" && git branch -M main && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:13:08.477Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <repository-url> && git push -u origin main",
-    "output": "git init && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <repository-url> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:13:41.488Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
-    "command": "git init mindshell && cd mindshell && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-repo-URL> && git push -u origin main",
-    "output": "git init mindshell && cd mindshell && git add . && git commit -m \"Initial commit\" && git branch -M main && git remote add origin <your-repo-URL> && git push -u origin main",
-    "type": "command",
-    "timestamp": "2025-07-11T06:16:02.514Z"
-  },
-  {
-    "prompt": "suggest me a command to create a git repo and push with name mindshell",
     "command": "git init && git checkout -b main && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git push -u origin main",
     "output": "git init && git checkout -b main && git add . && git commit -m \"Initial commit\" && git remote add origin <your-remote-url> && git push -u origin main",
     "type": "command",
@@ -219,5 +148,79 @@
     "output": "",
     "timestamp": "2025-07-11T06:30:32.243Z",
     "type": "command"
+  },
+  {
+    "prompt": "git add .",
+    "command": "git add .",
+    "output": "",
+    "timestamp": "2025-07-11T06:30:32.276Z",
+    "type": "command"
+  },
+  {
+    "prompt": "git commit -m \"first commit\"",
+    "command": "git commit -m \"first commit\"",
+    "output": "[main 765e227] first commit\n 3 files changed, 47 insertions(+), 48 deletions(-)",
+    "type": "command",
+    "timestamp": "2025-07-11T06:30:45.242Z"
+  },
+  {
+    "prompt": "git push",
+    "command": "git push",
+    "output": "",
+    "type": "error",
+    "error": "To https://github.com/sultansharma/mindshell.git\n   21079cd..765e227  main -> main",
+    "timestamp": "2025-07-11T06:30:57.118Z"
+  },
+  {
+    "prompt": "",
+    "command": "git push",
+    "output": "",
+    "error": "Everything up-to-date",
+    "timestamp": "2025-07-11T06:30:58.479Z",
+    "type": "command"
+  },
+  {
+    "prompt": "pws",
+    "command": "pws",
+    "output": "",
+    "type": "error",
+    "error": "/bin/sh: pws: command not found",
+    "timestamp": "2025-07-11T06:31:52.144Z"
+  },
+  {
+    "prompt": "",
+    "command": "pws",
+    "output": "",
+    "error": "/bin/sh: pws: command not found",
+    "timestamp": "2025-07-11T06:31:52.340Z",
+    "type": "command"
+  },
+  {
+    "prompt": "pwd",
+    "command": "pwd",
+    "output": "/Users/deep/Downloads/project 5",
+    "type": "command",
+    "timestamp": "2025-07-11T06:31:57.376Z"
+  },
+  {
+    "prompt": "rm -rf index.html",
+    "command": "rm -rf index.html",
+    "output": "",
+    "type": "command",
+    "timestamp": "2025-07-11T06:32:13.665Z"
+  },
+  {
+    "prompt": "rm -rf null",
+    "command": "rm -rf null",
+    "output": "",
+    "type": "command",
+    "timestamp": "2025-07-11T06:32:22.665Z"
+  },
+  {
+    "prompt": "add files and push",
+    "command": "git add . && git commit -m \"Add files\" && git push",
+    "output": "Add all changes to git, commit with a message, and push to the remote repository.",
+    "type": "command",
+    "timestamp": "2025-07-11T06:32:49.814Z"
   }
 ]

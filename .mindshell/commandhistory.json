@@ -81,5 +81,11 @@
   "cat index2.html",
   "cat index2.html",
   "cat index2.html",
-  "git status"
+  "git status",
+  "git commit -m \"first commit\"",
+  "git push",
+  "pws",
+  "pwd",
+  "rm -rf index.html",
+  "rm -rf null"
 ]
