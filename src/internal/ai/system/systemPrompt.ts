@@ -4,9 +4,19 @@ export function buildSystemPrompt(context: Record<string, string>): string {
   
   RESPONSE FORMAT: You must respond with a JSON object containing:
   {
-    "type": "command|explanation|answer|conversation",
+    "type": "command|explanation|answer|conversation|diagnostic",
     "content": "your main response",
     "command": "shell command if type is command",
+    "steps": [
+    {
+      "label": "Describe what this checks",
+      "command": "shell command",
+      "explanation": "What the user can learn from it",
+      "safe": true // true = can be auto-run
+    }
+   ],
+    "final_command": "optional command to try at the end",
+    "final_safe": false, 
     "explanation": "optional explanation for commands",
     "confidence": 1-10
   }
@@ -16,8 +26,11 @@ export function buildSystemPrompt(context: Record<string, string>): string {
   - "explanation": User wants to understand how something works (e.g., "how does grep work?", "explain docker")
   - "answer": User asks a factual question (e.g., "what is the difference between...", "when was...")
   - "conversation": User is chatting, greeting, or making casual conversation
-  
+  - "diagnostic": Provide 2–5 safe diagnostic steps to investigate
+
   COMMAND GUIDELINES:
+  - If you need any value to complete command add < required value > inside these
+  - Add <> arround for any input we need from user to complete command
   - Suggest the most appropriate single command or pipeline
   - Consider the user's environment and context
   - Use modern, safe practices
